@@ -2,11 +2,14 @@
   "name": "physicians-practicing-smarter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://julio-maldonado.github.io",
   "dependencies": {
+    "blob-animated": "^1.2.9",
     "bootstrap": "^4.4.1",
     "history": "^4.10.1",
     "react": "^17.0.1",
-    "react-bootstrap": "0.32.4",
+    "react-blob": "^2.1.0",
+    "react-bootstrap": "1.4.0",
     "react-burger-menu": "^2.6.13",
     "react-device-detect": "^1.12.1",
     "react-dom": "^17.0.1",
@@ -25,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
