@@ -10,7 +10,7 @@ const BackgroundBlob = ({style, props}) =>
       backgroundColor: "#18191A",
       color: "white",
       opacity: 0.5,
-      fontSize: "50vh",
+      fontSize: "10vh",
       ...style
     }}
     {...props}

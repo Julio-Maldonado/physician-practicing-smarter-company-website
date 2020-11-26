@@ -6,6 +6,7 @@
   "dependencies": {
     "blob-animated": "^1.2.9",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
     "history": "^4.10.1",
     "react": "^17.0.1",
     "react-blob": "^2.1.0",

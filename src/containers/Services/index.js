@@ -3,29 +3,22 @@ import styled from "styled-components";
 
 import "../styles.css";
 
-import ImageContainer from "./ImageContainer";
-import ImageCard from "./ImageCard";
-import SecondContainer from "./SecondContainer";
-import ThirdContainer from "./ThirdContainer";
-import FifthContainer from "./FifthContainer";
-import FourthContainer from "./FourthContainer";
-
+import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
 import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
 
-import {determineScreenState, isMobileSized} from "../../constants/helperFunctions";
-
+import {determineScreenState} from "../../constants/helperFunctions";
 import {BLOB_MAP} from "../../constants/constants";
 
 const SectionBody = styled.div`
-  max-width: ${props => isMobileSized(props.width) ? "85vw" : "70vw"};
+  max-width: 70vw;
   margin-left: auto;
   margin-right: auto;
 `;
 
-class Home extends React.Component {
+class Services extends React.Component {
   state = {
     isOpen: false,
     width: 0,
@@ -46,6 +39,7 @@ class Home extends React.Component {
   render() {
     const {width} = this.state;
     const screenState = determineScreenState(width);
+    console.log({screenState})
     return (
       <div className="App">
           <MyNavBar />
@@ -54,9 +48,10 @@ class Home extends React.Component {
           </div>
           <div className="App-content">
             <div className="fill-header" />
-            <ImageContainer width={width} />
+            <H1 color="black">Services</H1>
+            {/* <ImageContainer width={width} />
             <ImageCard width={width}/>
-            <SectionBody width={width}>
+            <SectionBody>
               <SecondContainer width={width} />
               <ThirdContainer width={width} />
               <FourthContainer width={width} />
@@ -65,7 +60,7 @@ class Home extends React.Component {
               <BackgroundBlob style={BLOB_MAP[screenState]["blob2"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blob3"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blob4"]}/>
-            </SectionBody>
+            </SectionBody> */}
             <Footer />
           </div>
       </div>
@@ -73,4 +68,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Services;

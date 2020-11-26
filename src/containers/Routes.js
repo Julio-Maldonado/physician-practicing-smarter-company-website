@@ -4,7 +4,11 @@ import { Route, Switch } from "react-router-dom";
 
 // import Home from "./Home";
 import Home from "./Home";
-// import Resources from "./Resources";
+import Services from "./Services";
+import Reports from "./Reports";
+import AboutUs from "./AboutUs";
+import ContactUs from "./ContactUs";
+import PPE from "./PPE";
 // import TrueHome from "./TrueHome";
 
 export default () => {
@@ -14,16 +18,31 @@ export default () => {
         path="/home"
         component={Home}
       />
-      {/* <Route
+      <Route
         exact
         path="/services"
         component={Services}
-      /> */}
-      {/* <Route
+      />
+      <Route
         exact
-        path="/services"
-        component={Services}
-      /> */}
+        path="/reports"
+        component={Reports}
+      />
+      <Route
+        exact
+        path="/aboutus"
+        component={AboutUs}
+      />
+      <Route
+        exact
+        path="/contactus"
+        component={ContactUs}
+      />
+      <Route
+        exact
+        path="/ppe"
+        component={PPE}
+      />
       <Route
         path="*"
         component={Home}
@@ -31,38 +50,6 @@ export default () => {
       <Route
         component={Home}
       />
-      {/* <Route
-        exact
-        path="/resources"
-        component={Resources}
-      />
-      <Route
-        path="/cameron"
-        render={props => <Home {...props} county={"Cameron"} />}
-      />
-      <Route
-        path="/hidalgo"
-        render={props => <Home {...props} county={"Hidalgo"} />}
-      />
-      <Route
-        path="/starr"
-        render={props => <Home {...props} county={"Starr"} />}
-      />
-      <Route
-        path="/willacy"
-        render={props => <Home {...props} county={"Willacy"} />}
-      />
-      <Route
-        path="/home"
-        component={TrueHome}
-      />
-      <Route
-        path="*"
-        component={TrueHome}
-      />
-      <Route
-        component={TrueHome}
-      /> */}
     </Switch>
   );
 };
