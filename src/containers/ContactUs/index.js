@@ -185,7 +185,6 @@ const ContactUs = () => {
             </li>
           </ul>
         </form>
-        <div onClick={() => openModal()}>flip modal</div>
         <div style={{textAlign: "center!important"}}>
           <Modal open={userInput.modalFlag} onClose={() => closeModal()} center>
             <center>
