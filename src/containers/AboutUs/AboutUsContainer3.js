@@ -18,7 +18,7 @@ const AboutUsContainer3 = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        Management Information System Analysis and Modification:
+        <b id="h2">Management Information System Analysis and Modification:</b>
       </H2>
       <H3 color="black">
         - Lead in developing the pre-registration office for Scottish Rite Children’s Hospital Clinic<br/>

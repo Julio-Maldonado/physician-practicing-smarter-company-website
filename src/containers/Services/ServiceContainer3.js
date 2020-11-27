@@ -18,7 +18,7 @@ const ServiceContainer3 = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        HIPAA Compliance and Consulting
+        <b id="h2">HIPAA Compliance and Consulting</b>
       </H2>
       <H3 color="black">
         Physician Practicing Smarter has implemented numerous security measures to help ensure that your data and processes are secure, and in full compliance with all HIPAA guidelines on security and privacy.

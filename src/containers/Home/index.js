@@ -7,11 +7,13 @@ import ImageContainer from "./ImageContainer";
 import ImageCard from "./ImageCard";
 import SecondContainer from "./SecondContainer";
 import ThirdContainer from "./ThirdContainer";
-import FifthContainer from "./FifthContainer";
 import FourthContainer from "./FourthContainer";
+import FifthContainer from "./FifthContainer";
+import BulkPPEInfoContainer from "./BulkPPEInfoContainer";
 
 import SideMenu from "../../components/utility/SideMenu";
 import Footer from "../../components/utility/Footer";
+import Contact from "../../components/utility/Contact";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
 
@@ -61,11 +63,13 @@ class Home extends React.Component {
               <ThirdContainer width={width} />
               <FourthContainer width={width} />
               <FifthContainer width={width} />
+              <BulkPPEInfoContainer width={width} />
               <BackgroundBlob style={BLOB_MAP[screenState]["blob1"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blob2"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blob3"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blob4"]}/>
             </SectionBody>
+            <Contact />
             <Footer />
           </div>
       </div>

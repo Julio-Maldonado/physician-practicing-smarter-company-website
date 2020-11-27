@@ -18,7 +18,7 @@ const ServicesContainer = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        We offer the following services:
+        <b id="h2">We offer the following services:</b>
       </H2>
       <H3 color="black">
         - Full or Partial Billing Services<br/>

@@ -10,6 +10,7 @@ import ReportReminderContainer from "./ReportReminderContainer";
 
 import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
+import Contact from "../../components/utility/Contact";
 import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
@@ -63,6 +64,7 @@ class Reports extends React.Component {
               <BackgroundBlob style={BLOB_MAP[screenState]["blobReports3"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blobReports4"]}/>
             </SectionBody>
+            <Contact />
             <Footer />
           </div>
       </div>

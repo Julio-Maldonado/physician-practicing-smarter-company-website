@@ -5,6 +5,7 @@ import Modal from "react-responsive-modal";
 import Loader from "react-loader-spinner";
 
 import "./styles.css";
+import "react-responsive-modal/src/styles.css";
 
 import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
@@ -40,6 +41,12 @@ const SectionBody = styled.div`
   margin-right: auto;
 `;
 
+const SectionWrapper = styled.div`
+  padding: 0;
+  margin: 0;
+  padding-top: ${props => props.paddingTop};
+`;
+
 const ContactUs = () => {
   const [sideMenuIsOpen, updateSideMenuIsOpen] = useState(false);
   const [width, updateWidth] = useState(0);
@@ -68,17 +75,18 @@ const ContactUs = () => {
 
   const onFormSubmit = e => {
     e.preventDefault();
-    setUserInput({ loading: true });
-    sendEmail(userInput).then(({ success }) => {
-      setUserInput({ loading: false });
-      openModal();
+    setUserInput({loading: true});
+    userInput["name"] = `${userInput.firstName} ${userInput.lastName}`;
+    sendEmail(userInput).then(({success}) => {
+      setUserInput({loading: false});
       if (success) {
-        setUserInput({ modalText: "Email successfully sent!" });
+        setUserInput({ modalText: "Email sent!" });
       } else {
-        setUserInput({
-          modalText: "Email was not sent out...try again later.",
-        });
+        setUserInput({ modalText: "Email was not sent out...try again later." });
       }
+      openModal();
+    }).catch((err) => {
+      setUserInput({loading: false});
     });
   };
 
@@ -102,6 +110,7 @@ const ContactUs = () => {
 
   const navigateSideMenu = () => updateSideMenuIsOpen(!sideMenuIsOpen);
   const screenState = determineScreenState(width);
+  const paddingTop = "1vh";
   return (
     <div className="App">
       <MyNavBar />
@@ -149,7 +158,7 @@ const ContactUs = () => {
               <select
                 name="subject"
                 className="field-select"
-                defaultValue="Medical Billing and Collection"
+                defaultValue="Bulk PPE Order"
                 onChange={handleChange}
               >
                 <option value="Medical Billing and Collection">Medical Billing and Collection</option>
@@ -157,6 +166,7 @@ const ContactUs = () => {
                 <option value="Designated Doctor's Exams billing">Designated Doctor's Exams billing</option>
                 <option value="Physician Credentialing">Physician Credentialing</option>
                 <option value="Insurance Collections">Insurance Collections</option>
+                <option value="Bulk PPE Order">Bulk PPE Order</option>
                 <option value="Other">Other</option>
               </select>
             </li>
@@ -175,13 +185,15 @@ const ContactUs = () => {
             </li>
           </ul>
         </form>
-        <Modal open={userInput.modalFlag} onClose={closeModal} center>
-          <br/>
-          <br/>
-          <center>
-            <h2>{userInput.modalText}</h2>
-          </center>
-        </Modal>
+        <div onClick={() => openModal()}>flip modal</div>
+        <div style={{textAlign: "center!important"}}>
+          <Modal open={userInput.modalFlag} onClose={() => closeModal()} center>
+            <center>
+              <h2>{userInput.modalText}</h2>
+              {userInput.modalText === "Email sent!" ? <h3>We'll respond promptly.</h3> : null}
+            </center>
+          </Modal>
+        </div>
         {userInput.loading ? (
           <div>
             <div

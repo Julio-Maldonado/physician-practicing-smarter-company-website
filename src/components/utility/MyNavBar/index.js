@@ -4,6 +4,7 @@ import styled from "styled-components";
 import LOGO_IMG from "./logo192.png"
 
 import {HashLink as Link} from "react-router-hash-link";
+import {scrollToTop} from "../../../constants/helperFunctions"
 
 const NavBarDiv = styled.div`
   z-index: 99;
@@ -24,7 +25,7 @@ class MyNavbar extends React.Component{
   render() {
     return (
       <NavBarDiv>
-        <Link smooth to={`/home`} className="my-navbar-link">
+        <Link smooth to={`/home`} className="my-navbar-link" onClick={() => scrollToTop()}>
           <LogoImgDiv src={LOGO_IMG} />
           {/* <p className="my-navbar-p" style={{display: "inline-block"}}>Physician Practicing Smarter</p> */}
         </Link>

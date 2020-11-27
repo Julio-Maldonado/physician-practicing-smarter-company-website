@@ -5,12 +5,12 @@ import H2 from "../../components/utility/H2";
 import H3 from "../../components/utility/H3";
 
 const ThirdContainerStyled = styled.div`
-    text-align: left;
+  text-align: left;
 `;
 
 const HomeDescriptionDiv = styled.div`
-    background-color: #F0F0F0;
-    border-radius: 5px;
+  background-color: #F0F0F0;
+  border-radius: 5px;
 `;
 
 const ThirdContainer = ({width}) => 
@@ -18,7 +18,7 @@ const ThirdContainer = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        Why Outsource your Medical Billing &amp; Collections?
+        <b id="h2">Why Outsource your Medical Billing &amp; Collections?</b>
       </H2>
       <H3 color="black">
         &nbsp;&nbsp;&nbsp;&nbsp;Having more time to serve your patients, avoiding countless hours billing, and having a professional committed to doing thing the right way are just a few benefits to outsourcing. Outsourcing to us will mean we work with your staff to ensure the correct information is input into the system in a timely manner the first time so we can obtain the highest reimbursement possible in the shortest period.

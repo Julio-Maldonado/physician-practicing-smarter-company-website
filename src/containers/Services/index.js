@@ -12,6 +12,7 @@ import ServiceContainer3 from "./ServiceContainer3";
 import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
 import Footer from "../../components/utility/Footer";
+import Contact from "../../components/utility/Contact";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
 
@@ -65,6 +66,7 @@ class Services extends React.Component {
               <BackgroundBlob style={BLOB_MAP[screenState]["blobServices3"]}/>
               <BackgroundBlob style={BLOB_MAP[screenState]["blobServices4"]}/>
             </SectionBody>
+            <Contact />
             <Footer />
           </div>
       </div>

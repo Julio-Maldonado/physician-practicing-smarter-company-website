@@ -18,7 +18,7 @@ const ServiceContainer1 = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        Accounts Receivables Collections and Consulting
+        <b id="h2">Accounts Receivables Collections and Consulting</b>
       </H2>
       <H3 color="black">
         Some medical providers have a large sum of monies tied up in the ageing/accounts receivable; with insurance compensations far below what is expected – and deserved you will see short-pay’s. We will work your Accounts Receivables reports to collect monies owed to you.

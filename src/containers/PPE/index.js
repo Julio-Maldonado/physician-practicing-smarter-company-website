@@ -3,8 +3,13 @@ import styled from "styled-components";
 
 import "../styles.css";
 
+import TitleContainer from "./TitleContainer";
+import BulkPPEInfoContainer from "./BulkPPEInfoContainer";
+import BulkPPEInfoContainer2 from "./BulkPPEInfoContainer2";
+
 import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
+import Contact from "../../components/utility/Contact";
 import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
@@ -47,19 +52,15 @@ class PPE extends React.Component {
           </div>
           <div className="App-content">
             <div className="fill-header" />
-            <H1 color="black">PPE</H1>
-            {/* <ImageContainer width={width} />
-            <ImageCard width={width}/>
+            <H1 color="black">Personal Protective Equipment</H1>
+            <TitleContainer width={width}/>
             <SectionBody width={width}>
-              <SecondContainer width={width} />
-              <ThirdContainer width={width} />
-              <FourthContainer width={width} />
-              <FifthContainer width={width} />
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob1"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob2"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob3"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob4"]}/>
-            </SectionBody> */}
+              <BulkPPEInfoContainer width={width} />
+              <BulkPPEInfoContainer2 width={width} />
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
+            </SectionBody>
+            <Contact />
             <Footer />
           </div>
       </div>

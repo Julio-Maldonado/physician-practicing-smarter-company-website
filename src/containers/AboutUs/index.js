@@ -11,6 +11,7 @@ import AboutUsContainer4 from "./AboutUsContainer4";
 
 import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
+import Contact from "../../components/utility/Contact";
 import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
@@ -55,16 +56,17 @@ class AboutUs extends React.Component {
             <div className="fill-header" />
             <H1 color="black">About Us</H1>
             <SectionBody width={width}>
-            <TitleContainer width={width} />
-            <AboutUsContainer1 width={width} />
-            <AboutUsContainer2 width={width} />
-            <AboutUsContainer3 width={width} />
-            <AboutUsContainer4 width={width} />
-            <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
-            <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
-            <BackgroundBlob style={BLOB_MAP[screenState]["blobReports3"]}/>
-            <BackgroundBlob style={BLOB_MAP[screenState]["blobReports4"]}/>
+              <TitleContainer width={width} />
+              <AboutUsContainer1 width={width} />
+              <AboutUsContainer2 width={width} />
+              <AboutUsContainer3 width={width} />
+              <AboutUsContainer4 width={width} />
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports3"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports4"]}/>
             </SectionBody>
+            <Contact />
             <Footer />
           </div>
       </div>

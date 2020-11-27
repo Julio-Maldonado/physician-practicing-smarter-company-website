@@ -18,7 +18,7 @@ const AboutUsContainer4 = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        Financial Analysis and Management:
+        <b id="h2">Financial Analysis and Management:</b>
       </H2>
       <H3 color="black">
       - Correcting how UnitedHealth Group Processes E/R visits, which result in a cost saving of over $5,000,000.00 per year.<br/>

@@ -18,7 +18,7 @@ const ServiceContainer2 = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        Medical Coding &amp; Claim Reimbursement
+        <b id="h2">Medical Coding &amp; Claim Reimbursement</b>
       </H2>
       <H3 color="black">
         <b id="h3">Yes</b>, medical coding is a fundamental aspect of maximizing claim reimbursement. The proper knowledge of medical coding and reimbursement methodologies will maximum reimbursements available. We assign the correct ICD-10, CPT, and/or HCPCS codes derived from the medical records and reports from your practice. Our Medical Coding Specialists generally have several years of clinical experience in a range of medical specialties.

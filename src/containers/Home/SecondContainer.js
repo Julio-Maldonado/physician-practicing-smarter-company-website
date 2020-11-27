@@ -20,7 +20,7 @@ const SecondContainerStyled = styled.div`
 const SecondContainer = ({width}) => 
   <SecondContainerStyled width={width}>
     <H2 color="white">
-      IS YOUR MEDICAL BILLING COSTING YOU TOO MUCH MONEY???
+      <b id="h2">IS YOUR MEDICAL BILLING COSTING YOU TOO MUCH MONEY???</b>
     </H2>
     {isMobileSized(width) ? null : <br/>}
     <br/>

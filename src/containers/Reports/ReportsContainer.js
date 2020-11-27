@@ -18,7 +18,7 @@ const ReportsContainer = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-      Reports include:
+        <b id="h2">Reports include:</b>
       </H2>
       <H3 color="black">
         - Instant access to accurate aging to know who is delinquent<br/>

@@ -18,7 +18,7 @@ const AboutUsContainer1 = ({width}) =>
     <br/>
     <HomeDescriptionDiv>
       <H2 color="black">
-        Executive Leadership Experience:
+        <b id="h2">Executive Leadership Experience:</b>
       </H2>
       <H3 color="black">
         - Served as Director of billing, collections, solid claims processing Medicare, Medi-cal, non-government, international and management consulting organization.  Provided consulting services for the Arizona Health Care Cost Containment System Medicaid Program; solid understanding of the state and government regulatory agencies, and accreditation organization, and working directly with the Medicaid Executive Director.<br/>
