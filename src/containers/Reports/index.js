@@ -3,17 +3,22 @@ import styled from "styled-components";
 
 import "../styles.css";
 
+import TitleContainer from "./TitleContainer";
+import ReportsDescriptionContainer from "./ReportsDescriptionContainer";
+import ReportsContainer from "./ReportsContainer";
+import ReportReminderContainer from "./ReportReminderContainer";
+
 import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
 import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
 
-import {determineScreenState} from "../../constants/helperFunctions";
+import {determineScreenState, isMobileSized} from "../../constants/helperFunctions";
 import {BLOB_MAP} from "../../constants/constants";
 
 const SectionBody = styled.div`
-  max-width: 70vw;
+  max-width: ${props => isMobileSized(props.width) ? "85vw" : "70vw"};
   margin-left: auto;
   margin-right: auto;
 `;
@@ -27,19 +32,18 @@ class Reports extends React.Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
 
   updateWindowDimensions = () => { this.setState({ width: window.innerWidth, height: window.innerHeight }) };
 
-  componentWillUnmount() { window.removeEventListener('resize', this.updateWindowDimensions); }
+  componentWillUnmount() { window.removeEventListener("resize", this.updateWindowDimensions); }
 
   navigateSideMenu = () => { this.setState({isOpen: !this.state.isOpen}); }
 
   render() {
     const {width} = this.state;
     const screenState = determineScreenState(width);
-    console.log({screenState})
     return (
       <div className="App">
           <MyNavBar />
@@ -49,18 +53,16 @@ class Reports extends React.Component {
           <div className="App-content">
             <div className="fill-header" />
             <H1 color="black">Reports</H1>
-            {/* <ImageContainer width={width} />
-            <ImageCard width={width}/>
-            <SectionBody>
-              <SecondContainer width={width} />
-              <ThirdContainer width={width} />
-              <FourthContainer width={width} />
-              <FifthContainer width={width} />
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob1"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob2"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob3"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob4"]}/>
-            </SectionBody> */}
+            <SectionBody width={width}>
+              <TitleContainer width={width} />
+              <ReportsContainer width={width} />
+              <ReportsDescriptionContainer width={width} />
+              <ReportReminderContainer width={width} />
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports3"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports4"]}/>
+            </SectionBody>
             <Footer />
           </div>
       </div>

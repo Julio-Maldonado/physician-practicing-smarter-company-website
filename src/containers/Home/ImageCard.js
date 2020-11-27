@@ -6,28 +6,28 @@ import H4 from "../../components/utility/H4";
 import {isMobileSized, determineScreenState} from "../../constants/helperFunctions";
 
 const widthMap = {
-    "wide": 350,
-    "full": 300,
-    "pacman": 275,
-    "half": 270,
-    "mobile": 200
-}
+  "wide": 350,
+  "full": 300,
+  "pacman": 275,
+  "half": 270,
+  "mobile": 200
+};
 
 const leftMap = {
-    "wide": 60,
-    "full": 60,
-    "pacman": 60,
-    "half": 55,
-    "mobile": 47
-}
+  "wide": 60,
+  "full": 60,
+  "pacman": 60,
+  "half": 55,
+  "mobile": 47
+};
 
 const topMap = {
-    "wide": 20,
-    "full": 17,
-    "pacman": 16,
-    "half": 15,
-    "mobile": 12
-}
+  "wide": 20,
+  "full": 17,
+  "pacman": 16,
+  "half": 15,
+  "mobile": 12
+};
 
 const StyledCard = styled.div`
   width: ${props => widthMap[props.screenState]}px;

@@ -31,6 +31,7 @@ const SideMenu = props => {
         <div className="horizontal-navbar">
           <NavigationLink title="Home" endpoint="home" />
           <NavigationLink title="Services" endpoint="services" />
+          <NavigationLink title="Reports" endpoint="reports" />
           <NavigationLink title="About Us" endpoint="aboutus" />
           <NavigationLink title="Contact Us" endpoint="contactus" />
           <NavigationLink title="PPE" endpoint="ppe" />

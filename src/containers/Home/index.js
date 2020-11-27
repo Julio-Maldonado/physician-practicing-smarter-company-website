@@ -34,12 +34,12 @@ class Home extends React.Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
 
   updateWindowDimensions = () => { this.setState({ width: window.innerWidth, height: window.innerHeight }) };
 
-  componentWillUnmount() { window.removeEventListener('resize', this.updateWindowDimensions); }
+  componentWillUnmount() { window.removeEventListener("resize", this.updateWindowDimensions); }
 
   navigateSideMenu = () => { this.setState({isOpen: !this.state.isOpen}); }
 

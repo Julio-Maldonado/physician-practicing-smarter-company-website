@@ -9,11 +9,11 @@ import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
 import BackgroundBlob from "../../components/utility/BackgroundBlob";
 
-import {determineScreenState} from "../../constants/helperFunctions";
+import {determineScreenState, isMobileSized} from "../../constants/helperFunctions";
 import {BLOB_MAP} from "../../constants/constants";
 
 const SectionBody = styled.div`
-  max-width: 70vw;
+  max-width: ${props => isMobileSized(props.width) ? "85vw" : "70vw"};
   margin-left: auto;
   margin-right: auto;
 `;
@@ -27,19 +27,18 @@ class PPE extends React.Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
 
   updateWindowDimensions = () => { this.setState({ width: window.innerWidth, height: window.innerHeight }) };
 
-  componentWillUnmount() { window.removeEventListener('resize', this.updateWindowDimensions); }
+  componentWillUnmount() { window.removeEventListener("resize", this.updateWindowDimensions); }
 
   navigateSideMenu = () => { this.setState({isOpen: !this.state.isOpen}); }
 
   render() {
     const {width} = this.state;
     const screenState = determineScreenState(width);
-    console.log({screenState})
     return (
       <div className="App">
           <MyNavBar />
@@ -51,7 +50,7 @@ class PPE extends React.Component {
             <H1 color="black">PPE</H1>
             {/* <ImageContainer width={width} />
             <ImageCard width={width}/>
-            <SectionBody>
+            <SectionBody width={width}>
               <SecondContainer width={width} />
               <ThirdContainer width={width} />
               <FourthContainer width={width} />
