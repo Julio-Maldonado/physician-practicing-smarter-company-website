@@ -1,6 +1,6 @@
 import React, { useReducer, useState, useEffect } from "react";
 
-import styled from "styled-components";
+// import styled from "styled-components";
 import Modal from "react-responsive-modal";
 import Loader from "react-loader-spinner";
 
@@ -11,10 +11,10 @@ import H1 from "../../components/utility/H1";
 import SideMenu from "../../components/utility/SideMenu";
 import Footer from "../../components/utility/Footer";
 import MyNavBar from "../../components/utility/MyNavBar";
-import BackgroundBlob from "../../components/utility/BackgroundBlob";
+// import BackgroundBlob from "../../components/utility/BackgroundBlob";
 
-import {determineScreenState, isMobileSized} from "../../constants/helperFunctions";
-import {BLOB_MAP} from "../../constants/constants";
+// import {determineScreenState, isMobileSized} from "../../constants/helperFunctions";
+// import {BLOB_MAP} from "../../constants/constants";
 import TitleContainer from "./TitleContainer";
 
 const sendEmail = async({name, emailAddress, subject, message, type}) => {
@@ -35,22 +35,22 @@ const sendEmail = async({name, emailAddress, subject, message, type}) => {
   }
 };
 
-const SectionBody = styled.div`
-  max-width: ${props => isMobileSized(props.width) ? "85vw" : "70vw"};
-  margin-left: auto;
-  margin-right: auto;
-`;
+// const SectionBody = styled.div`
+//   max-width: ${props => isMobileSized(props.width) ? "85vw" : "70vw"};
+//   margin-left: auto;
+//   margin-right: auto;
+// `;
 
-const SectionWrapper = styled.div`
-  padding: 0;
-  margin: 0;
-  padding-top: ${props => props.paddingTop};
-`;
+// const SectionWrapper = styled.div`
+//   padding: 0;
+//   margin: 0;
+//   padding-top: ${props => props.paddingTop};
+// `;
 
 const ContactUs = () => {
   const [sideMenuIsOpen, updateSideMenuIsOpen] = useState(false);
   const [width, updateWidth] = useState(0);
-  const [height, updateHeight] = useState(0);
+  // const [height, updateHeight] = useState(0);
 
   const [userInput, setUserInput] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
@@ -100,7 +100,7 @@ const ContactUs = () => {
 
   const updateWindowDimensions = () => {
     updateWidth(window.innerWidth);
-    updateHeight(window.innerHeight);
+    // updateHeight(window.innerHeight);
   };
 
   useEffect(() => {
@@ -109,8 +109,8 @@ const ContactUs = () => {
   }, [])
 
   const navigateSideMenu = () => updateSideMenuIsOpen(!sideMenuIsOpen);
-  const screenState = determineScreenState(width);
-  const paddingTop = "1vh";
+  // const screenState = determineScreenState(width);
+  // const paddingTop = "1vh";
   return (
     <div className="App">
       <MyNavBar />
@@ -222,7 +222,7 @@ const ContactUs = () => {
           </div>
         ) : null}
         {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/> */}
-        <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
+        {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/> */}
         <Footer />
       </div>
     </div>
