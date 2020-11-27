@@ -65,8 +65,8 @@ class Home extends React.Component {
               <FifthContainer width={width} />
               <BulkPPEInfoContainer width={width} />
               <BackgroundBlob style={BLOB_MAP[screenState]["blob1"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob2"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blob3"]}/>
+              {/* <BackgroundBlob style={BLOB_MAP[screenState]["blob2"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blob3"]}/> */}
               <BackgroundBlob style={BLOB_MAP[screenState]["blob4"]}/>
             </SectionBody>
             <Contact />

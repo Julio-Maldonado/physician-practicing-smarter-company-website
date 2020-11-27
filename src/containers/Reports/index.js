@@ -59,10 +59,10 @@ class Reports extends React.Component {
               <ReportsContainer width={width} />
               <ReportsDescriptionContainer width={width} />
               <ReportReminderContainer width={width} />
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
+              {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/> */}
               <BackgroundBlob style={BLOB_MAP[screenState]["blobReports3"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports4"]}/>
+              {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports4"]}/> */}
             </SectionBody>
             <Contact />
             <Footer />

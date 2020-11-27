@@ -57,8 +57,8 @@ class PPE extends React.Component {
             <SectionBody width={width}>
               <BulkPPEInfoContainer width={width} />
               <BulkPPEInfoContainer2 width={width} />
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/>
+              {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/> */}
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobServices3"]}/>
             </SectionBody>
             <Contact />
             <Footer />

@@ -61,10 +61,10 @@ class Services extends React.Component {
               <ServiceContainer1 width={width} />
               <ServiceContainer2 width={width} />
               <ServiceContainer3 width={width} />
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobServices1"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobServices2"]}/>
+              {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobServices1"]}/>
+              <BackgroundBlob style={BLOB_MAP[screenState]["blobServices2"]}/> */}
               <BackgroundBlob style={BLOB_MAP[screenState]["blobServices3"]}/>
-              <BackgroundBlob style={BLOB_MAP[screenState]["blobServices4"]}/>
+              {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobServices4"]}/> */}
             </SectionBody>
             <Contact />
             <Footer />
