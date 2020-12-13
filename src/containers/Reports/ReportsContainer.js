@@ -22,8 +22,6 @@ const ReportsContainer = ({width}) =>
       </H2>
       <H3 color="black">
         - Instant access to accurate aging to know who is delinquent<br/>
-        - Collection calls<br/>
-        - Follow-up and documentation<br/>
         - Appeal insurance carriers on delayed or denied claims<br/>
         - Medicare/Medicaid Credit balances - run report to catch monthly government credits<br/>
         - Refunds<br/>

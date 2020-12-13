@@ -222,6 +222,11 @@ const ContactUs = () => {
         ) : null}
         {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports1"]}/> */}
         {/* <BackgroundBlob style={BLOB_MAP[screenState]["blobReports2"]}/> */}
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Footer />
       </div>
     </div>

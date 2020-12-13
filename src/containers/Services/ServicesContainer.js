@@ -26,12 +26,11 @@ const ServicesContainer = ({width}) =>
         - Account Receivable Audits &amp; Collections<br/>
         - Aggressive Insurance Collections<br/>
         - Billing Organization<br/>
-        - Claims Follow-up<br/>
+        - Remote billings and collections<br/>
         - Electronic Claims Resubmission's<br/>
         - Patient Billing &amp; Collections<br/>
         - Payment Posting<br/>
         - Details Monthly Reports<br/>
-        - Billing information can be picked up, faxed, and mailed<br/>
         - Physician Credentialing<br/>
         - Electronic Billing Setup<br/>
       </H3>

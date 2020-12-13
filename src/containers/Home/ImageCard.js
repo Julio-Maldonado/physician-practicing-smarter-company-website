@@ -46,8 +46,8 @@ const ImageContainer = ({width}) =>
     <h2 color="black">Physician Practicing Smarter</h2>
     <h3>- A Billing &amp; Collections Firm -</h3>
     {isMobileSized(width) ? null : <br/>}
-    <H4>4314 N. 10th Street Suite E</H4>
-    <H4>McAllen, Texas 78501</H4>
+    <H4>4313 N. 10th Street Suite E</H4>
+    <H4>McAllen, Texas 78504</H4>
   </StyledCard>
 
 export default ImageContainer;

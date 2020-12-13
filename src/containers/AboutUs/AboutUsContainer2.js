@@ -21,7 +21,7 @@ const AboutUsContainer2 = ({width}) =>
         <b id="h2">Managed Care/ Insurance Industry Expertise:</b>
       </H2>
       <H3 color="black">
-        - Solid understanding of the Medicaid Plan requirement for their contracted health care plans.  Proven ability to develop, implement internal audit approaches and methodologies that will meet the state and government rules for hospitals organization and the public and private sector.
+        - Solid understanding of the Medicaid Plan requirement for their contracted health care plans. Proven ability to develop, implement internal audit approaches and methodologies that will meet the state and government rules for hospitals organization and the public and private sector.
       </H3>
     </HomeDescriptionDiv>
     <br/>
